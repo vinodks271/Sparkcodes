@@ -29,7 +29,7 @@ public class KafkaExample  {
 
     public static void main(String[] args) {
     	//Window Specific property if Hadoop is not instaalled or HADOOP_HOME is not set
-		 System.setProperty("hadoop.home.dir", "C:\\Users\\sk250102\\Downloads\\bigdataSetup\\hadoop");
+		// System.setProperty("hadoop.home.dir", "C:\\Users\\sk250102\\Downloads\\bigdataSetup\\hadoop");
     	//Logger rootLogger = LogManager.getRootLogger();
    		//rootLogger.setLevel(Level.WARN); 
         SparkConf conf = new SparkConf().setAppName("KafkaExample").setMaster("local[*]");    
