@@ -44,7 +44,7 @@ public class KafkaExample  {
         kafkaParams.put("value.deserializer", StringDeserializer.class);
         kafkaParams.put("group.id", "use_a_separate_group_id");
         kafkaParams.put("auto.offset.reset", "latest");
-       // kafkaParams.put("enable.auto.commit", false);
+       kafkaParams.put("enable.auto.commit", false);
 
         Collection<String> topics = Arrays.asList("test", "anothertopic");
 
